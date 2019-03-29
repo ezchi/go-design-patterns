@@ -1,4 +1,4 @@
 #+title: Study Notes: Go Design Patterns
 
 * Overview
-  This repo is used study notes for [[https://subscription.packtpub.com/book/application_development/9781786466204][Go Design Patterns]].
+  This repo is used as study notes for [[https://subscription.packtpub.com/book/application_development/9781786466204][Go Design Patterns]].
