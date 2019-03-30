@@ -2,6 +2,8 @@ package singleton
 
 import "testing"
 
+import _ "gopkg.in/check.v1"
+
 func TestGetInstance(t *testing.T) {
 	counter1 := GetInstance()
 
