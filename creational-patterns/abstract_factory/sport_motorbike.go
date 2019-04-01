@@ -2,7 +2,7 @@ package abstract_factory
 
 type SportMotorbike struct{}
 
-func (s *SportMotorbie) NumWheels() int {
+func (s *SportMotorbike) NumWheels() int {
 	return 2
 }
 
@@ -10,6 +10,6 @@ func (s *SportMotorbike) NumSeats() int {
 	return 1
 }
 
-func (s *SportMotorbike) GetMotorbikeType() int {
+func (s *SportMotorbike) GetMotorbikeType() VehicleType {
 	return SportMotorbikeType
 }
