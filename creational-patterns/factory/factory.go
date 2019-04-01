@@ -4,16 +4,18 @@ import (
 	"fmt"
 )
 
+type PaymentType int
+
 const (
-	Cash      = 1
-	DebitCard = 2
+	Cash PaymentType = iota + 1
+	DebitCard
 )
 
 type PaymentMethod interface {
 	Pay(amount float32) string
 }
 
-func GetPaymentMethod(m int) (PaymentMethod, error) {
+func GetPaymentMethod(m PaymentType) (PaymentMethod, error) {
 	switch m {
 	case Cash:
 		return new(CashPM), nil
