@@ -7,8 +7,9 @@ import (
 type PaymentType int
 
 const (
-	Cash PaymentType = iota + 1
-	DebitCard
+	CASH PaymentType = iota + 1
+	DEBIT_CARD
+	UNSUPPORTED
 )
 
 type PaymentMethod interface {
@@ -17,10 +18,10 @@ type PaymentMethod interface {
 
 func GetPaymentMethod(m PaymentType) (PaymentMethod, error) {
 	switch m {
-	case Cash:
+	case CASH:
 		return new(CashPM), nil
 
-	case DebitCard:
+	case DEBIT_CARD:
 		return new(DebitCardPM), nil
 
 	default:

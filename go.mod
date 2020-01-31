@@ -21,6 +21,7 @@ require (
 	github.com/stripe/safesql v0.0.0-20171221195208-cddf355596fe // indirect
 	github.com/tsenart/deadcode v0.0.0-20160724212837-210d2dc333e9 // indirect
 	github.com/walle/lll v0.0.0-20160702150637-8b13b3fbf731 // indirect
+	golang.org/x/tools v0.0.0-20191120001058-ad01d5993d97 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127
 	honnef.co/go/tools v0.0.0-20190319011948-d116c56a00f3 // indirect
 	mvdan.cc/interfacer v0.0.0-20180901003855-c20040233aed // indirect
